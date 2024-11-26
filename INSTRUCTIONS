@@ -1,3 +1,4 @@
+______________________________________________________________________________________
 
 1. Gym Database Management with Python and SQL
 Objective: The aim of this assignment is to reinforce your understanding of Python's interaction with SQL databases, focusing on CRUD (Create, Read, Update, Delete) operations in the context of a gym's membership and workout session management system. You will work with two tables: 'Members' and 'WorkoutSessions'.
@@ -12,6 +13,9 @@ Write a Python function to add a new member to the 'Members' table in the gym's 
         # SQL query to add a new member
         # Error handling for duplicate IDs or other constraints
 Expected Outcome: A Python function that successfully adds a new member to the 'Members' table in the gym's database. The function should handle errors gracefully, such as duplicate member IDs or violations of other constraints.
+
+______________________________________________________________________________________
+
 Task 2: Add a Workout Session
 
 Develop a Python function to add a new workout session to the 'WorkoutSessions' table for a specific member.
@@ -20,6 +24,9 @@ Develop a Python function to add a new workout session to the 'WorkoutSessions' 
         # SQL query to add a new workout session
         # Error handling for invalid member ID or other constraints
 Expected Outcome: A Python function that adds a new workout session to the 'WorkoutSessions' table in the gym's database for a specific member. The function should handle errors gracefully, such as invalid member IDs or violations of other constraints.
+
+______________________________________________________________________________________
+
 Task 3: Updating Member Information
 
 Implement a function to update the age of a member. Ensure that your function checks if the member exists before attempting the update.
@@ -29,6 +36,8 @@ Implement a function to update the age of a member. Ensure that your function ch
         # Check if member exists
         # Error handling
 Expected Outcome: A Python function that updates the age of a member and handles cases where the member does not exist.
+______________________________________________________________________________________
+
 Task 4: Delete a Workout Session
 
 Create a Python function to delete a workout session based on its session ID. Include error handling for cases where the session ID does not exist.
@@ -39,11 +48,7 @@ Create a Python function to delete a workout session based on its session ID. In
 Expected Outcome: A Python function that can delete a workout session using its session ID, with proper error handling for invalid IDs.
 Submission Guidelines:
 
-Submit a Python script (.py file) containing all the functions for the tasks.
-Include comments in your code to explain your logic and SQL queries.
-Ensure your script handles errors gracefully and provides meaningful output.
-
-
+______________________________________________________________________________________
 
 2. Advanced Data Analysis in Gym Management System
 Objective: The goal of this assignment is to advance your SQL querying skills within Python, focusing on specific SQL functions and clauses like BETWEEN. You will be working with the same gym database as in the previous assignment, comprising the Members and WorkoutSessions tables.
