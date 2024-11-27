@@ -1,24 +1,27 @@
 from mysqlConnect import connect_database
 from mysqlConnect import Error
 
-connection = connect_database()
-# def member():
-if connection is not None:
-    try:
-        cursor = connection.cursor()
-        
-        updated_member = (22, 1)
+def age_update(age, id):
+    connection = connect_database()
 
-        query = 'UPDATE members SET age = %s WHERE id = %s'
+    if connection is not None:
+        try:
+            cursor = connection.cursor()
+            
+            updated_member = (age, id)
 
-        cursor.execute(query, updated_member)
-        connection.commit()
-        print('Member updated')
+            query = 'UPDATE members SET age = %s WHERE id = %s'
 
-    except Error as e:
-        print(f'Error: {e}')
-  
-    finally:
-        cursor.close()
-        connection.close()
-        print('Connection disabled')
+            cursor.execute(query, updated_member)
+            connection.commit()
+            print('Member updated')
+
+        except Error as e:
+            print(f'Error: {e}')
+    
+        finally:
+            cursor.close()
+            connection.close()
+            print('Connection disabled')
+
+age_update(19, 2)
